@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" mode="ios">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Navicons Icon Component</title>
+    <script type="module" src="/build/navicons.esm.js"></script>
+    <script nomodule src="/build/navicons.js"></script>
+  </head>
+
+  <body>
+    <h1>Navicons</h1>
+
+    <h2>Default</h2>
+    <nav-icon name="cellular"></nav-icon>
+    <nav-icon name="at"></nav-icon>
+    <nav-icon name="call"></nav-icon>
+    <nav-icon name="football"></nav-icon>
+    <nav-icon name="analytics"></nav-icon>
+    <nav-icon name="grid"></nav-icon>
+    <nav-icon name="funnel"></nav-icon>
+    <nav-icon name="watch"></nav-icon>
+    <nav-icon name="add-circle-outline"></nav-icon>
+
+    <h2>Mode from html ios mode attribute</h2>
+    <nav-icon md="logo-android" ios="logo-apple"></nav-icon>
+    <nav-icon md="logo-android" ios="logo-apple"></nav-icon>
+
+    <h2>Mode set on icon</h2>
+    <nav-icon mode="ios" md="logo-android" ios="logo-apple"></nav-icon>
+    <nav-icon mode="md" md="logo-android" ios="logo-apple"></nav-icon>
+
+    <h2>Colors</h2>
+    <nav-icon color="primary" name="cellular"></nav-icon>
+    <nav-icon color="secondary" name="at"></nav-icon>
+    <nav-icon color="tertiary" name="call"></nav-icon>
+    <nav-icon color="success" name="football"></nav-icon>
+    <nav-icon color="warning" name="analytics"></nav-icon>
+    <nav-icon color="danger" name="grid"></nav-icon>
+    <nav-icon color="light" name="funnel"></nav-icon>
+    <nav-icon color="medium" name="watch"></nav-icon>
+    <nav-icon color="dark" name="toggle"></nav-icon>
+
+    <h2>Stroke width</h2>
+    <nav-icon name="heart-outline" style="--navicon-stroke-width: 8px"></nav-icon>
+
+    <h2>Font size</h2>
+    <nav-icon name="book" style="font-size: 50px"></nav-icon>
+    <nav-icon src="./assets/bug_report.svg" style="font-size: 50px"></nav-icon>
+
+    <h2>Custom SVGs</h2>
+    <nav-icon src="./assets/bug_report.svg"></nav-icon>
+    <nav-icon src="./assets/chat.svg"></nav-icon>
+    <nav-icon src="./assets/commute.svg"></nav-icon>
+    <nav-icon src="./assets/copyright.svg"></nav-icon>
+    <nav-icon src="./assets/done_all.svg"></nav-icon>
+    <nav-icon src="./assets/lock_open.svg"></nav-icon>
+    <nav-icon src="./assets/toll.svg"></nav-icon>
+    <nav-icon src="./assets/web_asset.svg"></nav-icon>
+    <nav-icon src="./assets/work_outline.svg"></nav-icon>
+
+    <h2>Custom SVGs: colors</h2>
+    <nav-icon color="primary" src="./assets/bug_report.svg"></nav-icon>
+    <nav-icon color="secondary" src="./assets/chat.svg"></nav-icon>
+    <nav-icon color="tertiary" src="./assets/commute.svg"></nav-icon>
+    <nav-icon color="success" src="./assets/copyright.svg"></nav-icon>
+    <nav-icon color="warning" src="./assets/done_all.svg"></nav-icon>
+    <nav-icon color="danger" src="./assets/lock_open.svg"></nav-icon>
+    <nav-icon color="light" src="./assets/toll.svg"></nav-icon>
+    <nav-icon color="medium" src="./assets/web_asset.svg"></nav-icon>
+    <nav-icon color="dark" src="./assets/work_outline.svg"></nav-icon>
+
+    <h2>Custom CSS</h2>
+    <nav-icon class="custom" name="grid"></nav-icon>
+    <nav-icon class="custom" name="funnel"></nav-icon>
+    <nav-icon class="custom" name="watch"></nav-icon>
+    <nav-icon class="custom" name="logo-react"></nav-icon>
+    <nav-icon class="custom" name="logo-javascript"></nav-icon>
+    <nav-icon class="custom" name="logo-angular"></nav-icon>
+    <nav-icon class="custom" src="./assets/done_all.svg"></nav-icon>
+    <nav-icon class="custom" src="./assets/web_asset.svg"></nav-icon>
+    <nav-icon class="custom" src="./assets/work_outline.svg"></nav-icon>
+
+    <h2>Aria</h2>
+    <nav-icon name="cellular"></nav-icon>
+    <nav-icon name="cellular" aria-label="Mobile data"></nav-icon>
+    <nav-icon name="cellular" aria-hidden="true"></nav-icon>
+
+    <h1>RTL</h1>
+
+    <h2>Default: Non-arrows</h2>
+    <nav-icon name="cut"></nav-icon>
+    <nav-icon name="call"></nav-icon>
+    <nav-icon name="checkbox"></nav-icon>
+    <nav-icon name="brush"></nav-icon>
+
+    <h2>Flip: Non-arrows</h2>
+    <nav-icon name="cut" flip-rtl></nav-icon>
+    <nav-icon name="call" flip-rtl></nav-icon>
+    <nav-icon name="checkbox" flip-rtl></nav-icon>
+    <nav-icon name="brush" flip-rtl></nav-icon>
+
+    <h2>Auto Flip: arrows</h2>
+    <nav-icon name="arrow-up"></nav-icon>
+    <nav-icon name="arrow-forward"></nav-icon>
+    <nav-icon name="arrow-down"></nav-icon>
+    <nav-icon name="arrow-back"></nav-icon>
+
+    <h2>Un-flip: arrows</h2>
+    <nav-icon name="arrow-up" flip-rtl="false"></nav-icon>
+    <nav-icon name="arrow-forward" flip-rtl="false"></nav-icon>
+    <nav-icon name="arrow-down" flip-rtl="false"></nav-icon>
+    <nav-icon name="arrow-back" flip-rtl="false"></nav-icon>
+
+    <h2>Auto Flip: chevrons</h2>
+    <nav-icon name="chevron-up"></nav-icon>
+    <nav-icon name="chevron-forward"></nav-icon>
+    <nav-icon name="chevron-down"></nav-icon>
+    <nav-icon name="chevron-back"></nav-icon>
+
+    <h2>Un-flip: chevrons</h2>
+    <nav-icon name="chevron-up" flip-rtl="false"></nav-icon>
+    <nav-icon name="chevron-forward" flip-rtl="false"></nav-icon>
+    <nav-icon name="chevron-down" flip-rtl="false"></nav-icon>
+    <nav-icon name="chevron-back" flip-rtl="false"></nav-icon>
+
+    <h2>Sanitized (shouldn't show)</h2>
+    <nav-icon src="./assets/sanitize.svg"></nav-icon>
+
+    <h2>Not Sanitized (should show)</h2>
+    <nav-icon sanitize="false" src="./assets/no-sanitize.svg"></nav-icon>
+
+    <p>
+      <a href="./cheatsheet.html">Cheatsheet</a>
+    </p>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        font-size: 32px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        margin: 15px 0 5px;
+        font-size: 25px;
+      }
+
+      h2 {
+        margin: 15px 0 5px;
+        font-size: 18px;
+      }
+
+      .custom {
+        stroke: red;
+        fill: blue;
+      }
+    </style>
+  </body>
+</html>
